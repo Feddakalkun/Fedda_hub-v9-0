@@ -1,0 +1,94 @@
+{
+  "84": {
+    "inputs": {
+      "audio": "Sexy Voice.flac",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Pick voice to clone"
+    }
+  },
+  "86": {
+    "inputs": {
+      "audioUI": "",
+      "audio": [
+        "112",
+        0
+      ]
+    },
+    "class_type": "PreviewAudio",
+    "_meta": {
+      "title": "Preview Audio"
+    }
+  },
+  "87": {
+    "inputs": {
+      "filename_prefix": "AUDIO/0",
+      "audioUI": "",
+      "audio": [
+        "112",
+        0
+      ]
+    },
+    "class_type": "SaveAudio",
+    "_meta": {
+      "title": "Save Audio (FLAC)"
+    }
+  },
+  "88": {
+    "inputs": {
+      "filename_prefix": "AUDIO/0",
+      "quality": "V0",
+      "audioUI": "",
+      "audio": [
+        "112",
+        0
+      ]
+    },
+    "class_type": "SaveAudioMP3",
+    "_meta": {
+      "title": "Save Audio (MP3)"
+    }
+  },
+  "109": {
+    "inputs": {
+      "repositories": "https://huggingface.co/IndexTeam/IndexTTS-2 IndexTTS-2\nhttps://huggingface.co/facebook/w2v-bert-2.0 IndexTTS-2/w2v-bert-2.0",
+      "auto_clone": true,
+      "max_concurrent_clones": 1,
+      "clone_depth": 0,
+      "enable_notifications": true,
+      "force_update": false,
+      "clone_submodules": false,
+      "hf_token": "",
+      "git_token": ""
+    },
+    "class_type": "GitCloneManager",
+    "_meta": {
+      "title": "🔧 Git Repository Clone Manager"
+    }
+  },
+  "110": {
+    "inputs": {
+      "text": "=== GIT CLONE REPORT ===\nTotal repositories: 2\nSuccessfully cloned/updated: 1\nAlready existing: 1\nInterrupted: 0\nFailed: 0\nMax concurrent: 1\nClone depth: Full history\nForce update: False\nInclude submodules: False\n\nDetails:\n✓ IndexTTS-2: Already cloned (258515cc)\n✓ w2v-bert-2.0: Cloned successfully to IndexTTS-2/w2v-bert-2.0 (8.7 GB)",
+      "anything": [
+        "109",
+        0
+      ]
+    },
+    "class_type": "easy showAnything",
+    "_meta": {
+      "title": "Show Any"
+    }
+  },
+  "112": {
+    "inputs": {
+      "UNKNOWN": "[false,true]",
+      "audio_prompt": [
+        "84",
+        0
+      ]
+    },
+    "_meta": {}
+  }
+}

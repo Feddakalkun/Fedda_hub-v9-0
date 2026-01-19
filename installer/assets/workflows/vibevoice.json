@@ -1,0 +1,36 @@
+{
+  "18": {
+    "inputs": {
+      "audio": "AUDIO MAN.MP3",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Load Audio"
+    }
+  },
+  "21": {
+    "inputs": {
+      "filename_prefix": "AUDIO/VIBEVOICE/0",
+      "audioUI": "",
+      "audio": [
+        "24",
+        0
+      ]
+    },
+    "class_type": "SaveAudio",
+    "_meta": {
+      "title": "Save Audio (FLAC)"
+    }
+  },
+  "24": {
+    "inputs": {
+      "UNKNOWN": 1,
+      "voice_to_clone": [
+        "18",
+        0
+      ]
+    },
+    "_meta": {}
+  }
+}

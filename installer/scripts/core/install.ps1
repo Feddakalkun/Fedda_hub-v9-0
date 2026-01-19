@@ -718,15 +718,17 @@ if (Test-Path $LegacyBackup) {
 }
 
 # 10. Install All Components
-Write-Log \"`n==========================================\"
-Write-Log \" Installing Ecosystem Components\"
-Write-Log \"==========================================\"
+Write-Log "`n=========================================="
+Write-Log " Installing Ecosystem Components"
+Write-Log "=========================================="
 
-Install-VoxCPM
+# VoxCPM removed - using ComfyUI TTS nodes instead (indextts2vc, vibevoice, etc.)
+# Install-VoxCPM
+
 Install-Ollama
 Install-FanvueHub
 
-# 10.5. Fix Dependency Conflicts (VoxCPM/Gradio vs rembg)
+# 10.5. Fix Dependency Conflicts (Gradio vs rembg)
 Write-Log "`n[Dependency Fix] Resolving package conflicts..."
 Write-Log "Upgrading Pillow to satisfy rembg requirements (>= 12.1.0)..."
 Run-Pip "install `"pillow>=12.1.0,<13.0.0`" --upgrade"

@@ -1,0 +1,117 @@
+{
+  "95": {
+    "inputs": {
+      "audio": "Sexy Voice.flac",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Voice Reference"
+    }
+  },
+  "97": {
+    "inputs": {
+      "filename_prefix": "AUDIO/TTS2/0",
+      "audioUI": "",
+      "audio": [
+        "95",
+        0
+      ]
+    },
+    "class_type": "SaveAudio",
+    "_meta": {
+      "title": "Save Audio (FLAC)"
+    }
+  },
+  "98": {
+    "inputs": {
+      "filename_prefix": "AUDIO/TTS2/0",
+      "audioUI": "",
+      "audio": [
+        "101",
+        0
+      ]
+    },
+    "class_type": "SaveAudio",
+    "_meta": {
+      "title": "Save Audio (FLAC)"
+    }
+  },
+  "99": {
+    "inputs": {
+      "filename_prefix": "AUDIO/TTS2/0",
+      "audioUI": "",
+      "audio": [
+        "95",
+        0
+      ]
+    },
+    "class_type": "SaveAudio",
+    "_meta": {
+      "title": "Save Audio (FLAC)"
+    }
+  },
+  "100": {
+    "inputs": {
+      "audio": "AUDIO WOMAN.MP3",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Emotion reference audio input"
+    }
+  },
+  "101": {
+    "inputs": {
+      "UNKNOWN": "[false,true]",
+      "reference_audio": [
+        "95",
+        0
+      ],
+      "text": [
+        "104",
+        0
+      ]
+    },
+    "_meta": {}
+  },
+  "104": {
+    "inputs": {
+      "text": "A small bird woke up early and saw the sunrise painting the sky in orange and pink.\nIt spread its wings and flew across the quiet village, singing a cheerful tune.\nDown below, a little girl looked up and smiled, waving as the bird circled above her.\nShe followed its flight until it landed on a tree near her window.\nEvery morning after that, the bird returned to greet her with its song.\nAnd soon, the girl and the bird became the best of friends."
+    },
+    "class_type": "CR Text",
+    "_meta": {
+      "title": "TEXT"
+    }
+  },
+  "109": {
+    "inputs": {
+      "repositories": "https://huggingface.co/IndexTeam/IndexTTS-2 IndexTTS-2\nhttps://huggingface.co/facebook/w2v-bert-2.0 IndexTTS-2/w2v-bert-2.0",
+      "auto_clone": true,
+      "max_concurrent_clones": 1,
+      "clone_depth": 0,
+      "enable_notifications": true,
+      "force_update": false,
+      "clone_submodules": false,
+      "hf_token": "",
+      "git_token": ""
+    },
+    "class_type": "GitCloneManager",
+    "_meta": {
+      "title": "🔧 Git Repository Clone Manager"
+    }
+  },
+  "110": {
+    "inputs": {
+      "text": "=== GIT CLONE REPORT ===\nTotal repositories: 2\nSuccessfully cloned/updated: 1\nAlready existing: 1\nInterrupted: 0\nFailed: 0\nMax concurrent: 1\nClone depth: Full history\nForce update: False\nInclude submodules: False\n\nDetails:\n✓ IndexTTS-2: Already cloned (258515cc)\n✓ w2v-bert-2.0: Cloned successfully to IndexTTS-2/w2v-bert-2.0 (8.7 GB)",
+      "anything": [
+        "109",
+        0
+      ]
+    },
+    "class_type": "easy showAnything",
+    "_meta": {
+      "title": "Show Any"
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "3": {
+    "inputs": {
+      "filename_prefix": "AUDIO/0",
+      "audioUI": "",
+      "audio": [
+        "71",
+        0
+      ]
+    },
+    "class_type": "SaveAudio",
+    "_meta": {
+      "title": "Save Audio (FLAC)"
+    }
+  },
+  "4": {
+    "inputs": {
+      "UNKNOWN": "auto",
+      "audio": [
+        "80",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "AUDIO TO CAPTION - Whisper node"
+    }
+  },
+  "6": {
+    "inputs": {
+      "audio": "Sexy Voice.flac",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "SAMPLE AUDIO"
+    }
+  },
+  "8": {
+    "inputs": {
+      "text_0": "A small bird woke up early and saw the sunrise painting the sky in orange and pink. It spread its wings and flew across the quiet village, singing a cheerful tune. Down below, a little girl looked up and smiled, waving as the birds heard.",
+      "text": [
+        "4",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "CAPTION"
+    }
+  },
+  "71": {
+    "inputs": {
+      "UNKNOWN": "vocos",
+      "sample_audio": [
+        "80",
+        0
+      ],
+      "sample_text": [
+        "4",
+        0
+      ]
+    },
+    "_meta": {}
+  },
+  "80": {
+    "inputs": {
+      "UNKNOWN": "0:15",
+      "audio": [
+        "6",
+        0
+      ]
+    },
+    "_meta": {}
+  },
+  "81": {
+    "inputs": {
+      "filename_prefix": "AUDIO/0",
+      "audioUI": "",
+      "audio": [
+        "80",
+        0
+      ]
+    },
+    "class_type": "SaveAudio",
+    "_meta": {
+      "title": "Save Audio (FLAC)"
+    }
+  },
+  "83": {
+    "inputs": {
+      "root_dir": "output",
+      "file": "AUDIOCAPTION.txt",
+      "append": "append",
+      "insert": true,
+      "text": [
+        "8",
+        0
+      ]
+    },
+    "class_type": "SaveText|pysssss",
+    "_meta": {
+      "title": "SAVE TEXT FILE"
+    }
+  },
+  "89": {
+    "inputs": {
+      "filename_prefix": "AUDIO/0",
+      "quality": "320k",
+      "audioUI": "",
+      "audio": [
+        "71",
+        0
+      ]
+    },
+    "class_type": "SaveAudioMP3",
+    "_meta": {
+      "title": "Save Audio (MP3)"
+    }
+  },
+  "109": {
+    "inputs": {
+      "repositories": "https://huggingface.co/IndexTeam/IndexTTS-2 IndexTTS-2\nhttps://huggingface.co/facebook/w2v-bert-2.0 IndexTTS-2/w2v-bert-2.0",
+      "auto_clone": true,
+      "max_concurrent_clones": 1,
+      "clone_depth": 0,
+      "enable_notifications": true,
+      "force_update": false,
+      "clone_submodules": false,
+      "hf_token": "",
+      "git_token": ""
+    },
+    "class_type": "GitCloneManager",
+    "_meta": {
+      "title": "🔧 Git Repository Clone Manager"
+    }
+  },
+  "110": {
+    "inputs": {
+      "text": "=== GIT CLONE REPORT ===\nTotal repositories: 2\nSuccessfully cloned/updated: 1\nAlready existing: 1\nInterrupted: 0\nFailed: 0\nMax concurrent: 1\nClone depth: Full history\nForce update: False\nInclude submodules: False\n\nDetails:\n✓ IndexTTS-2: Already cloned (258515cc)\n✓ w2v-bert-2.0: Cloned successfully to IndexTTS-2/w2v-bert-2.0 (8.7 GB)",
+      "anything": [
+        "109",
+        0
+      ]
+    },
+    "class_type": "easy showAnything",
+    "_meta": {
+      "title": "Show Any"
+    }
+  }
+}
